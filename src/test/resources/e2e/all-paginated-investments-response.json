@@ -1,0 +1,64 @@
+{
+  "_embedded": {
+    "investments": [
+      {
+        "id": "1234f3d2-56f3-518a-5d24-949bd074669a",
+        "name": "Tesla investment",
+        "symbol": "TSLA",
+        "_links": {
+          "self": {
+            "href": "http://localhost:52666/api/v1/investments/1234f3d2-56f3-518a-5d24-949bd074669a"
+          },
+          "profit": {
+            "href": "http://localhost:52666/api/v1/investments/1234f3d2-56f3-518a-5d24-949bd074669a/profits"
+          },
+          "investment-records": {
+            "href": "http://localhost:52666/api/v1/investments/1234f3d2-56f3-518a-5d24-949bd074669a/investment-records"
+          },
+          "investments": {
+            "href": "http://localhost:52666/api/v1/investments"
+          }
+        }
+      },
+      {
+        "id": "1da1f05d-344e-477c-b095-6529f0d756c1",
+        "name": "Apple investment",
+        "symbol": "AAPL",
+        "_links": {
+          "self": {
+            "href": "http://localhost:52666/api/v1/investments/1da1f05d-344e-477c-b095-6529f0d756c1"
+          },
+          "profit": {
+            "href": "http://localhost:52666/api/v1/investments/1da1f05d-344e-477c-b095-6529f0d756c1/profits"
+          },
+          "investment-records": {
+            "href": "http://localhost:52666/api/v1/investments/1da1f05d-344e-477c-b095-6529f0d756c1/investment-records"
+          },
+          "investments": {
+            "href": "http://localhost:52666/api/v1/investments"
+          }
+        }
+      }
+    ]
+  },
+  "_links": {
+    "first": {
+      "href": "http://localhost:52666/api/v1/investments?page=0&size=2"
+    },
+    "self": {
+      "href": "http://localhost:52666/api/v1/investments?page=0&size=2"
+    },
+    "next": {
+      "href": "http://localhost:52666/api/v1/investments?page=1&size=2"
+    },
+    "last": {
+      "href": "http://localhost:52666/api/v1/investments?page=3&size=2"
+    }
+  },
+  "page": {
+    "size": 2,
+    "totalElements": 7,
+    "totalPages": 4,
+    "number": 0
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "_embedded": {
+    "investments": [
+      {
+        "id": "1234f3d2-56f3-518a-5d24-949bd074669a",
+        "name": "Tesla investment",
+        "symbol": "TSLA",
+        "_links": {
+          "self": {
+            "href": "http://localhost:52666/api/v1/investments/1234f3d2-56f3-518a-5d24-949bd074669a"
+          },
+          "profit": {
+            "href": "http://localhost:52666/api/v1/investments/1234f3d2-56f3-518a-5d24-949bd074669a/profits"
+          },
+          "investment-records": {
+            "href": "http://localhost:52666/api/v1/investments/1234f3d2-56f3-518a-5d24-949bd074669a/investment-records"
+          },
+          "investments": {
+            "href": "http://localhost:52666/api/v1/investments"
+          }
+        }
+      },
+      {
+        "id": "1da1f05d-344e-477c-b095-6529f0d756c1",
+        "name": "Apple investment",
+        "symbol": "AAPL",
+        "_links": {
+          "self": {
+            "href": "http://localhost:52666/api/v1/investments/1da1f05d-344e-477c-b095-6529f0d756c1"
+          },
+          "profit": {
+            "href": "http://localhost:52666/api/v1/investments/1da1f05d-344e-477c-b095-6529f0d756c1/profits"
+          },
+          "investment-records": {
+            "href": "http://localhost:52666/api/v1/investments/1da1f05d-344e-477c-b095-6529f0d756c1/investment-records"
+          },
+          "investments": {
+            "href": "http://localhost:52666/api/v1/investments"
+          }
+        }
+      },
+      {
+        "id": "7ddff3d2-56f3-518a-5d24-949bd07466ab",
+        "name": "Endava investment",
+        "symbol": "DAVA",
+        "_links": {
+          "self": {
+            "href": "http://localhost:52666/api/v1/investments/7ddff3d2-56f3-518a-5d24-949bd07466ab"
+          },
+          "profit": {
+            "href": "http://localhost:52666/api/v1/investments/7ddff3d2-56f3-518a-5d24-949bd07466ab/profits"
+          },
+          "investment-records": {
+            "href": "http://localhost:52666/api/v1/investments/7ddff3d2-56f3-518a-5d24-949bd07466ab/investment-records"
+          },
+          "investments": {
+            "href": "http://localhost:52666/api/v1/investments"
+          }
+        }
+      },
+      {
+        "id": "5ddff3d2-56f3-518a-5d24-949bd074669b",
+        "name": "Google investment",
+        "symbol": "GOOGL",
+        "_links": {
+          "self": {
+            "href": "http://localhost:52666/api/v1/investments/5ddff3d2-56f3-518a-5d24-949bd074669b"
+          },
+          "profit": {
+            "href": "http://localhost:52666/api/v1/investments/5ddff3d2-56f3-518a-5d24-949bd074669b/profits"
+          },
+          "investment-records": {
+            "href": "http://localhost:52666/api/v1/investments/5ddff3d2-56f3-518a-5d24-949bd074669b/investment-records"
+          },
+          "investments": {
+            "href": "http://localhost:52666/api/v1/investments"
+          }
+        }
+      },
+      {
+        "id": "6ddff3d2-56f3-518a-5d24-949bd07466bb",
+        "name": "Facebook investment",
+        "symbol": "FB",
+        "_links": {
+          "self": {
+            "href": "http://localhost:52666/api/v1/investments/6ddff3d2-56f3-518a-5d24-949bd07466bb"
+          },
+          "profit": {
+            "href": "http://localhost:52666/api/v1/investments/6ddff3d2-56f3-518a-5d24-949bd07466bb/profits"
+          },
+          "investment-records": {
+            "href": "http://localhost:52666/api/v1/investments/6ddff3d2-56f3-518a-5d24-949bd07466bb/investment-records"
+          },
+          "investments": {
+            "href": "http://localhost:52666/api/v1/investments"
+          }
+        }
+      },
+      {
+        "id": "99dff3d2-56f3-518a-5d24-949bd07466ab",
+        "name": "Netflix investment",
+        "symbol": "NFLX",
+        "_links": {
+          "self": {
+            "href": "http://localhost:52666/api/v1/investments/99dff3d2-56f3-518a-5d24-949bd07466ab"
+          },
+          "profit": {
+            "href": "http://localhost:52666/api/v1/investments/99dff3d2-56f3-518a-5d24-949bd07466ab/profits"
+          },
+          "investment-records": {
+            "href": "http://localhost:52666/api/v1/investments/99dff3d2-56f3-518a-5d24-949bd07466ab/investment-records"
+          },
+          "investments": {
+            "href": "http://localhost:52666/api/v1/investments"
+          }
+        }
+      },
+      {
+        "id": "88dff3d2-56f3-518a-5d24-949bd07466ab",
+        "name": "Amazon investment",
+        "symbol": "AMZN",
+        "_links": {
+          "self": {
+            "href": "http://localhost:52666/api/v1/investments/88dff3d2-56f3-518a-5d24-949bd07466ab"
+          },
+          "profit": {
+            "href": "http://localhost:52666/api/v1/investments/88dff3d2-56f3-518a-5d24-949bd07466ab/profits"
+          },
+          "investment-records": {
+            "href": "http://localhost:52666/api/v1/investments/88dff3d2-56f3-518a-5d24-949bd07466ab/investment-records"
+          },
+          "investments": {
+            "href": "http://localhost:52666/api/v1/investments"
+          }
+        }
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "http://localhost:52666/api/v1/investments?page=0&size=10"
+    }
+  },
+  "page": {
+    "size": 10,
+    "totalElements": 7,
+    "totalPages": 1,
+    "number": 0
+  }
+}

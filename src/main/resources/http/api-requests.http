@@ -1,0 +1,45 @@
+#Create investment
+POST http://localhost:8080/api/v1/investments
+Content-Type: application/json
+Authorization: Basic bWlrZTpzaGliYQ==
+
+{
+  "name": "Monero2 investment",
+  "symbol": "MON"
+}
+###
+
+#Create investment record
+POST http://localhost:8080/api/v1/investments/1aca86c0-7f15-45bc-8c3d-082ae3b28aad/investment-records
+Content-Type: application/json
+Authorization: Basic bWlrZTpzaGliYQ==
+
+{
+  "amountBought": "1",
+  "unitPrice": "10",
+  "spent": "10",
+  "investmentDate": "2020-11-28T10:11:23",
+  "symbol": "MON"
+}
+###
+
+
+#Get all profits
+GET http://localhost:8080/api/v1/profits
+Authorization: Basic bWlrZTpzaGliYQ==
+Content-Type: application/json
+
+###
+
+#Get all investments
+GET http://localhost:8080/api/v1/investments/
+Authorization: Basic bWlrZTpzaGliYQ==
+Content-Type: application/json
+
+###
+#Get all investment records
+DELETE http://localhost:8080/api/v1/investments/e56cb449-c7f2-4f3e-9dde-7f60b09d68c7/investment-records/8c7fea37-c95c-4651-824a-546f306147af
+Authorization: Basic bWlrZTpzaGliYQ==
+Content-Type: application/json
+
+###

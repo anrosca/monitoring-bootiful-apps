@@ -1,0 +1,2 @@
+org.springframework.boot.env.EnvironmentPostProcessor=inc.evil.stock.config.env.CheckProfilesEnvironmentPostProcessor
+org.springframework.boot.diagnostics.FailureAnalyzer=inc.evil.stock.config.env.NoActiveProfilesSetFailureAnalyzer

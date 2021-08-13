@@ -1,0 +1,13 @@
+global:
+  scrape_interval: 30s
+
+scrape_configs:
+  - job_name: 'spring_micrometer'
+    metrics_path: '/actuator/prometheus'
+    scrape_interval: 35s
+    scrape_timeout: 30s
+    static_configs:
+      - targets: ['monitoring-bootiful-apps:8080']
+    basic_auth:
+      username: 'mike'
+      password_file: '/etc/prometheus/.passwd'

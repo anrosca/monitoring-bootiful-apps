@@ -1,0 +1,71 @@
+---
+version: '2'
+services:
+  #Operational database
+  bootiful-operational-db:
+    image: postgres:13.3
+    container_name: bootiful-operational-db
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: bootiful-operational-db
+    ports:
+      - "5435:5432"
+
+  #Redis cache
+  redis-cache:
+    image: redis
+    container_name: redis-cache
+    ports:
+      - "6379:6379"
+
+
+#  #InfluxDB
+#  influx-db:
+#    image: quay.io/influxdb/influxdb:v2.0.3
+#    container_name: influx-db
+#    ports:
+#      - "8086:8086"
+#    environment:
+#      DOCKER_INFLUXDB_INIT_MODE: upgrade
+#      DOCKER_INFLUXDB_INIT_USERNAME: influx
+#      DOCKER_INFLUXDB_INIT_PASSWORD: influx
+#      DOCKER_INFLUXDB_INIT_ORG: evil.inc
+#      DOCKER_INFLUXDB_INIT_BUCKET: evil.inc
+
+
+  #Prometheus
+  prometheus:
+    image: prom/prometheus:v2.28.1
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./prometheus/.passwd:/etc/prometheus/.passwd
+
+  #Grafana dashboard
+  grafana:
+    image: grafana/grafana:8.0.6
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    depends_on:
+      - prometheus
+
+  #Bootiful app
+  monitoring-bootiful-apps:
+    image: anrosca/heap-monitoring-bootiful-apps:0.0.1
+    container_name: demo-monitoring-bootiful-apps
+    ports:
+      - "8080:8080"
+      - "9010:9010"
+    environment:
+      POSTGRES_JDBC_URL: jdbc:postgresql://bootiful-operational-db:5432/bootiful-operational-db
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      REDIS_HOST: redis-cache
+      REDIS_PORT: 6379
+    #    restart: on-failure
+    depends_on:
+      - bootiful-operational-db
+      - redis-cache

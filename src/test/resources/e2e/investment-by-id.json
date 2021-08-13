@@ -1,0 +1,19 @@
+{
+  "id": "1234f3d2-56f3-518a-5d24-949bd074669a",
+  "name": "Tesla investment",
+  "symbol": "TSLA",
+  "_links": {
+    "self": {
+      "href": "http://localhost:52666/api/v1/investments/1234f3d2-56f3-518a-5d24-949bd074669a"
+    },
+    "profit": {
+      "href": "http://localhost:52666/api/v1/investments/1234f3d2-56f3-518a-5d24-949bd074669a/profits"
+    },
+    "investment-records": {
+      "href": "http://localhost:52666/api/v1/investments/1234f3d2-56f3-518a-5d24-949bd074669a/investment-records"
+    },
+    "investments": {
+      "href": "http://localhost:52666/api/v1/investments"
+    }
+  }
+}
